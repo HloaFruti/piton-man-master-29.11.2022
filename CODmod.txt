@@ -1,1 +1,89 @@
-https://www.online-python.com/3oYapR9Ndn
+//Исправления. Напылова
+
+class shape ():
+    def __init__(self, positionY, positionX, scale, color):
+        self._positionY = positionY // =0
+        self._scale = scale //=0
+        self._color = color //= ''
+        self._positionX = positionX//=0
+    
+    def get_positionY(self):
+        return self._positionY
+            
+    def set_position(self, Y):
+        self._position = Y
+    
+    def get_positionX(self):
+        return self._positionX
+            
+    def set_position(self, X):
+        self._position = X
+        
+    def get_scale(self):
+        return self._scale
+            
+    def set_scale(self, cm):
+        self._scale = cm
+        
+    def get_color(self):
+        return self._color
+            
+    def set_color(self, rgb):
+        self._color = rgb
+        
+    def info (self):
+        print("positionY:", self._positionY,"positionX:", self._positionX, "\nscale:", self._scale, "\ncolor:", self._color) 
+        
+    def area (self):
+        print("plohad shape:",self.sedeONE, self.sedeTWO) //Нет подсчета площади тк неизвестна фигура
+        
+class rectangle (shape):
+    def __init__(self, positionY, positionX, scale, color, sedeONE, sedeTWO):
+        self._positionY = positionY //suuper().__init__()
+        self._positionX = positionX
+        self._scale = scale // =0
+        self._color = color // =''
+        self._sedeONE = sedeONE // =0
+        self._sedeTWO = sedeTWO // =0
+    
+    def get_position(self):
+        return self._position
+            
+    def set_position(self, x):
+        self._position = x
+        
+    def get_scale(self):
+        return self._scale
+            
+    def set_scale(self, cm):
+        self._scale = cm
+        
+    def get_color(self):
+        return self._color
+            
+    def set_color(self, rgb):
+        self._color = rgb
+        
+    def get_sedeONE(self):
+        return self._sedeONE
+            
+    def set_sedeONE(self, cm):
+        self._color = cm
+        
+    def get_sedeTWO(self):
+        return self._sedeTWO
+            
+    def set_sedeTWO(self, cm):
+        self._sedeTWO = cm
+        
+    def info_Rectangle (self):
+        print("position:", self._position, "\nscale:", self._scale, "\ncolor:", self._color,"\nslide 1:",self._sedeONE,"\nslide 2:",self._sedeTWO)
+		//Надо быо вписать super().info() и часть инфы не нужно было повторять 
+
+    def area (self):
+        print("plohad Rectangle:", self._sedeONE * self._sedeTWO )
+        
+//нет остальных дочерних классов
+premougolnic = shape(90, 80, "BIG", "blak" )//Неправильная передача данных и зачем вообще Shape?
+premougolnihe = rectangle(900, 100, "VERY BIG", "red", 20, 40) //Неправильная передача данных
+premougolnihe.area()//А где вывод метода info
