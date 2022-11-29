@@ -1,4 +1,4 @@
-//Исправления
+//Исправления. Напылова
 
 class shape ():
     def __init__(self, positionY, positionX, scale, color):
